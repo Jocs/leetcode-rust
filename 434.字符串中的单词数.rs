@@ -10,7 +10,7 @@ impl Solution {
         let mut counter = 0;
         let mut is_in_word = false;
 
-        for (i, c) in s.chars().enumerate() {
+        for c in s.chars() {
             if is_in_word == false && c != ' ' {
                 counter += 1;
                 is_in_word = true;
