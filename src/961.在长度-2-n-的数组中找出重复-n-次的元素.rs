@@ -13,7 +13,7 @@ impl Solution {
 
         let mut result: i32 = -1;
 
-        for num in nums {
+        for &num in &nums {
             let count = map.entry(num).or_insert(0);
 
             if *count >= 1 {
